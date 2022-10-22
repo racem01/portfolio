@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Racem Ben Ayed</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/b84367bc8b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="navbar">
+            <nav>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/racem.benayed"><i class="fa-brands fa-facebook"></i></a><br>
+                    <a href="https://www.linkedin.com/in/racem-ben-ayed-10506b201/"><i class="fa-brands fa-linkedin"></i></a><br>
+                    <a href="https://github.com/racem01"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <img src="images/logo.png" class="logo" />
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#work">work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container home">
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>
+                    Welcome ,<br /> I'm <span>racem</span> ben ayed <br /> From Tunisia
+                </h1>
+            </div>
+            <div class="header-images">
+                <img src="images/r.jpg" />
+            </div>
+        </div>
+    </div>
+    <!---------------about------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        I'm racem ben ayed , a final year undergraduate, student pursuing my bachelor's in IT Management, from École supérieure de commerce Sfax. In my past role, I was responsible for many of the key coding tasks and overall project management. For instance,
+                        I wrote quite a bit of back-end code in Python, Java, Ruby and PHP and optimized front-end code in JavaScript and HTML
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('knowledge')">knowledge</p>
+                        <p class="tab-links" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <!------knowledge------>
+                    <div class="tab-contents active-tab" id="knowledge">
+                        <ul>
+                            <li><span>Intelligence artificielle</span><br /></li>
+                            <li><span>blockchain</span></li>
+                            <li><span>data mining</span></li>
+                            <li><span>digital marketing</span></li>
+                            <li><span>Operating systems:</span>Linux/Unix</li>
+                            <li>
+                                <span>Mobile application development :</span> android studio
+                            </li>
+                        </ul>
+                    </div>
+                    <!------skills------>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web development :</span><br /> html5 / CSS3 / JS
+                            </li>
+                            <li>
+                                <span>Programming languages :</span><br /> Python / Java / C / C# / C++ / php
+                            </li>
+                            <li>
+                                <span> Database and SQL : </span><br />
+                            </li>
+                            <li>
+                                <span>collaborative work tools :</span><br /> trello / coogle
+                            </li>
+                            <li><span>conception :</span> UML</li>
+                            <li><span>Web integration</span></li>
+                        </ul>
+                    </div>
+                    <!------Experience------>
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li>
+                                <span>summer internships :</span><br> -I did my internships at APBS groupe in july 2022 <br> and at clinisys company in August 2022 <br /> -internship project : learn bootstrap / learn JS and Vue.js<br /> to create 5 games
+                                by using them .
+                            </li>
+                            <li><span>assistant :</span>hardware store "ben ayed", sfax</li>
+                        </ul>
+                    </div>
+                    <!------Education----->
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Ecole supérieure de commerce sfax :</span><br /> -first year bachelor's in IT Management "pretty good" awarded 2020-2021 <br /> -second year bachelor's in IT Management "well" awarded 2020-2021
+                            </li>
+                            <li><span>Mahmoud Magdich high school:</span><br /> -Bachelors Degree in economics, "well" awarded 2019-2020</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------services-------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title"> My services</h1>
+
+                <div class="services-list">
+                    <div>
+                        <h2>Frontend Development</h2>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Backend Development</h2>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <h2>Mobile App Development</h2>
+                        <a href="#">learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <!-----------------my work-------->
+        <div id="work">
+            <div class="container">
+                <h1 class="sub-title"> My work</h1>
+                <div class="work-list">
+                    <div class="image-container">
+                        <img src="images/pieces.PNG">
+                        <h2> pieces auto</h2>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/por.PNG">
+                        <h2> potfolio personnel </h2>
+                    </div>
+                    <div class="image-container">
+                        <img src="images/voy.png">
+                        <h2> agence de voyage</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- contact -->
+        <div class="contact" id="contact">
+            <div class="container">
+                <div class="main">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fas fa-paper-plane"></i> racembenayed9@gmail.com</p>
+                        <p><i class="fa-solid fa-phone">                            </i> 44145391</p>
+                        <a href="images/cv.pdf" download class="btn ">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="form">
+                            <input type="text" name="Name" id="Name" placeholder="Your name" required>
+                            <input type="email" name="email" id="email" placeholder="Your email" required>
+                            <textarea name="Message" rows="6" id="Message" placeholder="Your message"></textarea>
+                            <button type="reset" class="btn btn2">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
